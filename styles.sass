@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap')
+
+$primary-color: #42455a
+$secondary-color: #b2b1b1
+$active-color: #19dafa
+$effect-color-red: #fd00da
+$effect-color-green: #19d7f8
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    font-family: "Montserrat", sans-serif
+
+body
+
+.container
+    width: 100%
+    height: 100vh
+    background: $primary-color
+
+.menu
+
+    ul
+        display: inline-flex
+        margin: 50px
+        li
+            list-style: none
+            margin: 0 20px
+            color: $secondary-color
+            img
+                width: 50px
+                height: 50px
+                margin-top: -9px
+                margin-right: 50px
+
+.active
+    color: #19dafa !important
+
+.signup-btn
+    text-decoration: none
+    color: $active-color
+    position: absolute
+    top: 40px
+    right: 80px
+    border: 2px solid transparent
+    border-radius: 20px
+    background: linear-gradient($primary-color, $primary-color), linear-gradient(circle at top left, $effect-color-red, $effect-color-green)
+    background-origin: border-box
+    background-clip: content-box, border-box
