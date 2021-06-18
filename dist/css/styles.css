@@ -24,6 +24,7 @@
   list-style: none;
   margin: 0 20px;
   color: #b2b1b1;
+  cursor: pointer;
 }
 
 .menu ul li img {
@@ -31,6 +32,7 @@
   height: 50px;
   margin-top: -9px;
   margin-right: 50px;
+  cursor: pointer;
 }
 
 .active {
@@ -45,8 +47,150 @@
   right: 80px;
   border: 2px solid transparent;
   border-radius: 20px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#42455a), to(#42455a)), -webkit-gradient(linear, left top, left bottom, color-stop(at, circle), color-stop(#fd00da), to(#19d7f8));
-  background-image: linear-gradient(#42455a, #42455a), linear-gradient(circle at top left, #fd00da, #19d7f8);
+  background: -webkit-gradient(linear, left top, left bottom, from(#42455a), to(#42455a)), radial-gradient(circle at top left, #C9ACF9, #5557CE);
+  background: linear-gradient(#42455a, #42455a), radial-gradient(circle at top left, #C9ACF9, #5557CE);
   background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+
+.signup-btn span {
+  display: block;
+  padding: .5em 1em;
+}
+
+.banner {
+  position: absolute;
+  width: 80%;
+  height: 70vh;
+  top: 25%;
+  left: 130px;
+  color: #eee;
+}
+
+.app-text {
+  width: 40%;
+  float: left;
+}
+
+.app-text h1 {
+  font-size: 2.5rem;
+  width: 640px;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.app-text p {
+  line-height: 1.8;
+}
+
+.app-picture {
+  width: 60%;
+  float: right;
+  margin-top: -60px;
+}
+
+.app-picture img {
+  width: 100%;
+}
+
+.play-btn {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 20px;
+}
+
+.play-btn-inner {
+  width: 50px;
+  height: 50px;
+  border: 2px solid transparent;
+  border-radius: 50%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#42455a), to(#42455a)), radial-gradient(circle at top left, #C9ACF9, #5557CE);
+  background: linear-gradient(#42455a, #42455a), radial-gradient(circle at top left, #C9ACF9, #5557CE);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  margin-right: 20px;
+}
+
+.play-btn-inner i {
+  padding: 1em;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+small {
+  cursor: pointer;
+  letter-spacing: 3px;
+  color: #19dafa;
+}
+
+.quick-links {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: -webkit-gradient(linear, left top, right top, from(#C9ACF9), to(#5557CE));
+  background: linear-gradient(to right, #C9ACF9, #5557CE);
+}
+
+.quick-links ul {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 25px auto;
+  text-align: center;
+}
+
+.quick-links ul li {
+  list-style: none;
+  margin: 0 50px;
+  cursor: pointer;
+  color: #ccc;
+}
+
+.quick-links ul li i {
+  font-size: 1.5rem;
+}
+
+.quick-links ul li p {
+  margin-top: .5em;
+}
+
+.social-icons {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  margin: 0 40px;
+}
+
+.social-icons ul li {
+  list-style: none;
+  margin: 1em;
+}
+
+.social-icons ul li a {
+  font-size: 1.5em;
+}
+
+.social-icons ul li:first-child a {
+  color: #3b5998;
+}
+
+.social-icons ul li:nth-child(2) a {
+  color: #00acee;
+}
+
+.social-icons ul li:nth-child(3) a {
+  color: #fafafa;
+}
+
+.social-icons ul li:nth-child(4) a {
+  color: #8a3ab9;
+}
+
+.social-icons ul li:last-child a {
+  color: #0e76a8;
 }
 /*# sourceMappingURL=styles.css.map */
